@@ -75,4 +75,28 @@ public class Mandelbrot {
     private double mapToImaginary(int y) {
         return (y - HEIGHT / 2) / (0.5 * zoom * HEIGHT) + moveY;
     }
+
+    public double getMoveX() {
+        return moveX;
+    }
+
+    public void setMoveX(double moveX) {
+        this.moveX = moveX;
+    }
+
+    public double getMoveY() {
+        return moveY;
+    }
+
+    public void setMoveY(double moveY) {
+        this.moveY = moveY;
+    }
+
+    public int getZoom() {
+        return zoom;
+    }
+
+    public void setZoom(int zoom) {
+        this.zoom = zoom;
+    }
 }

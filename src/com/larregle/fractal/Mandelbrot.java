@@ -16,7 +16,7 @@ public class Mandelbrot {
     public static final int[] colors;
     private static final Mandelbrot instance;
 
-    private int zoom;
+    private float zoom;
     private double moveX;
     private double moveY;
 
@@ -31,7 +31,7 @@ public class Mandelbrot {
     }
 
     private Mandelbrot() {
-        zoom = 1;
+        zoom = 0.09F;
         moveX = 0D;
         moveY = 0D;
     }
@@ -92,11 +92,11 @@ public class Mandelbrot {
         this.moveY = moveY;
     }
 
-    public int getZoom() {
+    public float getZoom() {
         return zoom;
     }
 
-    public void setZoom(int zoom) {
+    public void setZoom(float zoom) {
         this.zoom = zoom;
     }
 }
